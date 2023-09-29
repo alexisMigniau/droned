@@ -10,7 +10,7 @@ body {
 }
 
 #menu-container {
-    width : 50px;
+    width : 300px;
     margin-left: 50px;
     height: 100vh;
     max-height: 100vh;
@@ -30,14 +30,34 @@ body {
     font-family: 'Roboto', sans-serif;
     color: white;
     &:hover {
-        width: 200px;
-    }
-
-    h2 {
-        
+        width: 300px;
     }
 }
 
+h2 {
+    padding-top: 20px;
+}
+
 hr {
-    width: 60%;
+    width: 70%;
+}
+
+.drone-container {
+    width: 260px;
+    padding: 10px;
+    background-color: #343942;
+    border-radius: 20px;
+    transition: all 0.5s;
+    &:hover {
+        scale : 1.1
+    }
+}
+
+.drone-container > h5 {
+    width: 100%;
+    text-align: right;
+}
+
+.drone-container > h5 > em {
+    text-align: left;
 }

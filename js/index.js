@@ -5,6 +5,9 @@ document.addEventListener("DOMContentLoaded", () => {
     init()
 });
 
+var drones = [];
+var citys = [];
+
 // Initialisation de la carte et de tous les objets
 function init() {
 
@@ -26,9 +29,16 @@ function init() {
        city.setMarker(map) 
     });
 
+    // Drone icone
+    const icon = L.icon({
+        iconUrl : 'https://cdn2.iconfinder.com/data/icons/drone-28/179/drone-11-512.png',
+        iconSize: [30, 30],
+        iconAnchor : [15, 15]
+    })
+
     // Drones
     var drones = [];
-    drones.push(new Drone(citys[0], citys[1]))
+    drones.push(new Drone(citys[0], citys[1], icon, 30000))
 
     drones.forEach(drone => {
         drone.init(map)
