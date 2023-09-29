@@ -1,0 +1,43 @@
+body {
+    margin: 0px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+#map {
+    height: 100vh;
+    width: 100vw;
+}
+
+#menu-container {
+    width : 50px;
+    margin-left: 50px;
+    height: 100vh;
+    max-height: 100vh;
+    position: absolute;
+    overflow-y: auto;
+    overflow-x: hidden;
+    text-wrap: nowrap;
+    top: 0px;
+    right: 0px;
+    z-index: 1000;
+    background-color: #202124;
+    transition: all 0.5s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    &:hover {
+        width: 200px;
+    }
+
+    h2 {
+        
+    }
+}
+
+hr {
+    width: 60%;
+}
